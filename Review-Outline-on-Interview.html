@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://blog.lawlietxxl.site').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Going through all this before you take the tech interview.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Review Outline on Interview">
+<meta property="og:url" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview.html">
+<meta property="og:site_name" content="lawlietxxl&#39;s blog">
+<meta property="og:description" content="Going through all this before you take the tech interview.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/1.png">
+<meta property="og:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/2.png">
+<meta property="og:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/3.png">
+<meta property="og:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/4.png">
+<meta property="og:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/5.png">
+<meta property="article:published_time" content="2019-03-02T03:27:52.000Z">
+<meta property="article:modified_time" content="2020-01-12T10:12:03.400Z">
+<meta property="article:author" content="lawlietxxl">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.lawlietxxl.site/Review-Outline-on-Interview/1.png">
+
+<link rel="canonical" href="https://blog.lawlietxxl.site/Review-Outline-on-Interview.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Review Outline on Interview | lawlietxxl's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lawlietxxl's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.lawlietxxl.site/Review-Outline-on-Interview.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lawlietxxl">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lawlietxxl's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Review Outline on Interview
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-03-02 11:27:52" itemprop="dateCreated datePublished" datetime="2019-03-02T11:27:52+08:00">2019-03-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-01-12 18:12:03" itemprop="dateModified" datetime="2020-01-12T18:12:03+08:00">2020-01-12</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/Review-Outline-on-Interview.html#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Review-Outline-on-Interview.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Going through all this before you take the tech interview.</p>
+<a id="more"></a>
+
+<h3 id="Union-Find"><a href="#Union-Find" class="headerlink" title="Union Find"></a>Union Find</h3><h4 id="applications"><a href="#applications" class="headerlink" title="applications"></a>applications</h4><ul>
+<li>Percolation.</li>
+<li>Games (Go, Hex).</li>
+<li>Dynamic connectivity.</li>
+<li>Least common ancestor.</li>
+<li>Equivalence of finite state automata.</li>
+<li>Hoshen-Kopelman algorithm in physics.</li>
+<li>Hinley-Milner polymorphic type inference.</li>
+<li>Kruskal’s minimum spanning tree algorithm.</li>
+<li>Compiling equivalence statements in Fortran.</li>
+<li>Morphological attribute openings and closings.</li>
+<li>Matlab’s bwlabel() function in image processing.</li>
+</ul>
+<h3 id="Stacks-and-Queues"><a href="#Stacks-and-Queues" class="headerlink" title="Stacks and Queues"></a>Stacks and Queues</h3><ul>
+<li>LinkedList implementation.</li>
+<li>Array implementation. Array is between 25% and 100% full.(why? think about when to resize array)</li>
+<li>Can always use a stack to replace recursion.</li>
+<li>Dijkstra’s 2-stack algorithms to solve arithmetic expression. (It’s a compiler!)</li>
+</ul>
+<h3 id="Elementary-Sorting"><a href="#Elementary-Sorting" class="headerlink" title="Elementary Sorting"></a>Elementary Sorting</h3><table>
+<thead>
+<tr>
+<th>type</th>
+<th>time avg</th>
+<th>best</th>
+<th>worst</th>
+<th>space</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>selection sort</td>
+<td>$N^2$</td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>insertion sort</td>
+<td>$N^2$</td>
+<td>$N$</td>
+<td>$~\cfrac{1}{2}N^2$</td>
+<td>0</td>
+<td>For partially-sorted arrays, insertion sort runs in linear time.Number of exchanges equals the number of inversions.An inversion is a pair of keys that are out of order.</td>
+</tr>
+<tr>
+<td>shell sort</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="shuffle-sort"><a href="#shuffle-sort" class="headerlink" title="shuffle sort"></a>shuffle sort</h4><p>Generate a random real number for every array entry, and then sort using those random numbers as the keys.<br>    - Generate a random real number for each array entry.<br>    - Sort the array.<br>Then go better – Knuth shuffle:<br>    - In iteration i, pick integer r between 0 and i uniformly at random.<br>    - Swap a[i] and a[r].</p>
+<h4 id="convex-hull"><a href="#convex-hull" class="headerlink" title="convex hull"></a>convex hull</h4><p>The convex hull of a set of N points is the smallest perimeter fence enclosing the points – graham scan.</p>
+<h4 id="binary-search"><a href="#binary-search" class="headerlink" title="binary search"></a>binary search</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">    <span class="keyword">while</span>(l &lt;= r)&#123;</span><br><span class="line">        <span class="keyword">int</span> index = l + (r-l)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(value &lt; nums[index]) r = index-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (value &gt; nums[index]) l = index+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> index;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">return</span> -<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Merge-Sort"><a href="#Merge-Sort" class="headerlink" title="Merge Sort"></a>Merge Sort</h3><p>Merge sort use O(n) space!<br>it’s important to <strong>not</strong> create the auxiliary array in the re in the recursive routine because that could lead to extensive cost of extra array creation!</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(Comparable[] a, Comparable[] aux, <span class="keyword">int</span> lo, <span class="keyword">int</span> mid, <span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">assert</span> <span class="title">isSorted</span><span class="params">(a, lo, mid)</span></span>; <span class="comment">// precondition: a[lo..mid] sorted</span></span><br><span class="line">    <span class="function"><span class="keyword">assert</span> <span class="title">isSorted</span><span class="params">(a, mid+<span class="number">1</span>, hi)</span></span>; <span class="comment">// precondition: a[mid+1..hi] sorted</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++)</span><br><span class="line">        aux[k] = a[k];</span><br><span class="line">    <span class="keyword">int</span> i = lo, j = mid+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (i &gt; mid) a[k] = aux[j++];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; hi) a[k] = aux[i++];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (less(aux[j], aux[i])) a[k] = aux[j++];</span><br><span class="line">        <span class="keyword">else</span> a[k] = aux[i++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">assert</span> <span class="title">isSorted</span><span class="params">(a, lo, hi)</span></span>; <span class="comment">// postcondition: a[lo..hi] sorted</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">    aux = <span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">    sort(a, aux, <span class="number">0</span>, a.length-<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(Comparable[] a, Comparable[] aux, <span class="keyword">int</span> lo, <span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (hi &lt;= lo) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">    sort(a, aux, lo, mid);</span><br><span class="line">    sort(a, aux, mid+<span class="number">1</span>, hi);</span><br><span class="line">    merge(a, aux, lo, mid, hi);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="bottom-up-merge-sort"><a href="#bottom-up-merge-sort" class="headerlink" title="bottom-up merge sort"></a>bottom-up merge sort</h4><blockquote>
+<p>Any compare-based sorting algorithm must use at least $lg ( N ! ) \approx N lg N$ compares in the worst-case.</p>
+</blockquote>
+<h3 id="Quick-Sort"><a href="#Quick-Sort" class="headerlink" title="Quick Sort"></a>Quick Sort</h3><p>details</p>
+<ul>
+<li>Partitioning in-place. Using an extra array makes partitioning easier(and stable), but is not worth the cost.</li>
+<li>Terminating the loop. Testing whether the pointers cross is a bit trickier than it might seem.</li>
+<li>Staying in bounds. The (j == lo) test is redundant (why?), but the (i == hi) test is not.</li>
+<li>Preserving randomness. Shuffling is needed for performance guarantee.</li>
+<li>Equal keys. When duplicates are present, it is (counter-intuitively) better   to stop on keys equal to the partitioning item’s key</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> lo, <span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = lo, j = hi+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">        <span class="keyword">while</span>(a[++i] &lt; a[lo])</span><br><span class="line">            <span class="keyword">if</span> (i == hi) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">while</span>(a[lo] &lt; a[--j])</span><br><span class="line">            <span class="keyword">if</span> (j == lo) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">if</span>(i &gt;= j) <span class="keyword">break</span>;</span><br><span class="line">        exchange(a, i, j);</span><br><span class="line">    &#125;</span><br><span class="line">    exchange(a, lo, j);</span><br><span class="line">    <span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sort(<span class="keyword">int</span>[]a, <span class="keyword">int</span> lo, <span class="keyword">int</span> hi)&#123;</span><br><span class="line">    <span class="keyword">int</span> j = partition(a, lo, hi);</span><br><span class="line">    sort(a, lo, j-<span class="number">1</span>);</span><br><span class="line">    sort(a, j+<span class="number">1</span>, hi);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="find-the-kth-largest"><a href="#find-the-kth-largest" class="headerlink" title="find the kth largest"></a>find the kth largest</h4><p>use quick sort to achieve $O(N)$ (it’s rather slow)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Comparable <span class="title">select</span><span class="params">(Comparable[] a, <span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    StdRandom.shuffle(a);</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">0</span>, hi = a.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (hi &gt; lo)&#123;</span><br><span class="line">        <span class="keyword">int</span> j = partition(a, lo, hi);</span><br><span class="line">        <span class="keyword">if</span> (j &lt; k) lo = j + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; k) hi = j - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> a[k];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> a[k];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="duplicate-keys"><a href="#duplicate-keys" class="headerlink" title="duplicate keys"></a>duplicate keys</h4><p>Dijkstra 3-way partitioning demo</p>
+<ul>
+<li>Let v be partitioning item a[lo].</li>
+<li>Scan i from left to right.<ul>
+<li>(a[i] &lt; v): exchange a[lt] with a[i]; increment both lt and i</li>
+<li>(a[i] &gt; v): exchange a[gt] with a[i]; decrement gt</li>
+<li>(a[i] == v): increment i</li>
+</ul>
+</li>
+</ul>
+<h4 id="sorting-summary"><a href="#sorting-summary" class="headerlink" title="sorting summary"></a>sorting summary</h4><table>
+<thead>
+<tr>
+<th></th>
+<th>inplace?</th>
+<th>stable?</th>
+<th>worst</th>
+<th>average</th>
+<th>best</th>
+<th>remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>selection</td>
+<td>√</td>
+<td></td>
+<td>$N^2$/2</td>
+<td>$N^2$/2</td>
+<td>$N^2$/2</td>
+<td>N exchanges</td>
+</tr>
+<tr>
+<td>insertion</td>
+<td>√</td>
+<td>√</td>
+<td>$N^2$/2</td>
+<td>$N^2$/4</td>
+<td>N</td>
+<td>use for small N or partially ordered</td>
+</tr>
+<tr>
+<td>shell</td>
+<td></td>
+<td>——</td>
+<td>—</td>
+<td>——</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>merge</td>
+<td></td>
+<td>√</td>
+<td>$NlgN$</td>
+<td>$NlgN$</td>
+<td>$NlgN$</td>
+<td>N log N guarantee, stable</td>
+</tr>
+<tr>
+<td>quick</td>
+<td>√</td>
+<td></td>
+<td>$N^2$/2</td>
+<td>2NlgN</td>
+<td>N</td>
+<td>N log N probabilistic guarantee fastest in practice</td>
+</tr>
+<tr>
+<td>3-way quick</td>
+<td>√</td>
+<td></td>
+<td>$N^2$/2</td>
+<td>2NlgN</td>
+<td>N</td>
+<td>improves quicksort in presence of duplicate keys</td>
+</tr>
+<tr>
+<td>heap</td>
+<td>√</td>
+<td></td>
+<td>2NlgN</td>
+<td>2NlgN</td>
+<td>NlgN</td>
+<td>NlgN guarantee, in-place</td>
+</tr>
+</tbody></table>
+<h3 id="Priority-Queues"><a href="#Priority-Queues" class="headerlink" title="Priority Queues"></a>Priority Queues</h3><h4 id="applications-1"><a href="#applications-1" class="headerlink" title="applications"></a>applications</h4><ul>
+<li>Event-driven simulation. [customers in a line, colliding particles]</li>
+<li>Numerical computation. [reducing roundoff error]</li>
+<li>Data compression. [Huffman codes]</li>
+<li>Graph searching. [Dijkstra’s algorithm, Prim’s algorithm]</li>
+<li>Number theory. [sum of powers]</li>
+<li>Artificial intelligence. [A* search]</li>
+<li>Statistics. [maintain largest M values in a sequence]</li>
+<li>Operating systems. [load balancing, interrupt handling]</li>
+<li>Discrete optimization. [bin packing, scheduling]</li>
+<li>Spam filtering. [Bayesian spam filter]</li>
+</ul>
+<h4 id="binary-heap"><a href="#binary-heap" class="headerlink" title="binary heap"></a>binary heap</h4><p>Array representation.</p>
+<ul>
+<li>Indices start at 1.</li>
+<li>Take nodes in level order.</li>
+<li>No explicit links needed!</li>
+<li>Parent of node at k is at k/2.</li>
+<li>Children of node at k are at 2k and 2k+1</li>
+</ul>
+<p>Cheat sheet.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">swim</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (k &gt; <span class="number">1</span> &amp;&amp; less(k/<span class="number">2</span>, k))&#123;</span><br><span class="line">        exch(k, k/<span class="number">2</span>);</span><br><span class="line">        k = k/<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sink</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">2</span>*k &lt;= N)&#123;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">2</span>*k;</span><br><span class="line">        <span class="keyword">if</span> (j &lt; N &amp;&amp; less(j, j+<span class="number">1</span>)) j++;</span><br><span class="line">        <span class="keyword">if</span> (!less(k, j)) <span class="keyword">break</span>;</span><br><span class="line">        exch(k, j);</span><br><span class="line">        k = j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Key <span class="title">delMax</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Key max = pq[<span class="number">1</span>];</span><br><span class="line">    exch(<span class="number">1</span>, N--);</span><br><span class="line">    sink(<span class="number">1</span>);</span><br><span class="line">     pq[N+<span class="number">1</span>] = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="heap-sort"><a href="#heap-sort" class="headerlink" title="heap sort"></a>heap sort</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N = a.length;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> k=N/<span class="number">2</span>;k&gt;=<span class="number">1</span>;k--)&#123;</span><br><span class="line">        sink(a, k, N);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(N&gt;<span class="number">1</span>)&#123;</span><br><span class="line">        exch(a, <span class="number">1</span>, N);</span><br><span class="line">        sink(a, <span class="number">1</span>, --N);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Significance. In-place sorting algorithm with N log N worst-case.</p>
+<ul>
+<li>Mergesort: no, linear extra space.</li>
+<li>Quicksort: no, quadratic time in worst case.</li>
+<li>Heapsort: yes!<br>Bottom line. Heapsort is optimal for both time and space, but:</li>
+<li>Inner loop longer than quicksort’s.</li>
+<li>Makes poor use of cache memory.</li>
+<li>Not stable.</li>
+</ul>
+<h3 id="Symbol-Tables"><a href="#Symbol-Tables" class="headerlink" title="Symbol Tables"></a>Symbol Tables</h3><h4 id="binary-search-tree"><a href="#binary-search-tree" class="headerlink" title="binary search tree"></a>binary search tree</h4><p>it is a kind of table, so it does not have duplicate keys?</p>
+<p><strong>delete minimum node</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteMin</span><span class="params">()</span></span></span><br><span class="line"><span class="function"> </span>&#123; root = deleteMin(root); &#125;</span><br><span class="line"> <span class="function"><span class="keyword">private</span> Node <span class="title">deleteMin</span><span class="params">(Node x)</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (x.left == <span class="keyword">null</span>) <span class="keyword">return</span> x.right;</span><br><span class="line">     x.left = deleteMin(x.left);</span><br><span class="line">     x.count = <span class="number">1</span> + size(x.left) + size(x.right);</span><br><span class="line">     <span class="keyword">return</span> x;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>delete 2-child node</strong> – find successor<br>如果下一个节点都从右子数中找，树的整体就会越来越偏左，左部分密集</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> Node <span class="title">delete</span><span class="params">(Node x, Key key)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (x == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">     <span class="keyword">int</span> cmp = key.compareTo(x.key);</span><br><span class="line">     <span class="keyword">if</span> (cmp &lt; <span class="number">0</span>) x.left = delete(x.left, key);</span><br><span class="line">     <span class="keyword">else</span> <span class="keyword">if</span> (cmp &gt; <span class="number">0</span>) x.right = delete(x.right, key);</span><br><span class="line">     <span class="keyword">else</span> &#123;</span><br><span class="line">         <span class="keyword">if</span> (x.right == <span class="keyword">null</span>) <span class="keyword">return</span> x.left;</span><br><span class="line">         <span class="keyword">if</span> (x.left == <span class="keyword">null</span>) <span class="keyword">return</span> x.right;</span><br><span class="line">         Node t = x;</span><br><span class="line">         x = min(t.right);</span><br><span class="line">         x.right = deleteMin(t.right);</span><br><span class="line">         x.left = t.left;</span><br><span class="line">     &#125;</span><br><span class="line">     x.count = size(x.left) + size(x.right) + <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">return</span> x;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="balanced-search-tree"><a href="#balanced-search-tree" class="headerlink" title="balanced search tree"></a>balanced search tree</h3><p>2-3 tree, red-black tree, B-tree</p>
+<h4 id="2-3-tree"><a href="#2-3-tree" class="headerlink" title="2-3 tree"></a>2-3 tree</h4><p>Allow 1 or 2 keys per node.</p>
+<ul>
+<li><p>2-node: one key, two children.</p>
+</li>
+<li><p>3-node: two keys, three children.<br>Symmetric order. Inorder traversal yields keys in ascending order.</p>
+</li>
+<li><p>search</p>
+</li>
+<li><p>insert into a 2-node at bottom</p>
+<ul>
+<li>search for key, as usual</li>
+<li>replace 2-node with 3-node</li>
+</ul>
+</li>
+<li><p>insert into a 3-node at bottom</p>
+<ul>
+<li>add new key to 3-node to create temp 4-node</li>
+<li>move middle key in 4-node into parent(recursively)(parent will change into a x-node)</li>
+<li>If you reach the root and it’s a 4-node, split it into three 2-nodes.</li>
+</ul>
+</li>
+<li><p>construction</p>
+<ul>
+<li>insert into bottom continuesly</li>
+</ul>
+</li>
+</ul>
+<p><strong>could do it, but there’s a better way.</strong></p>
+<h4 id="red-black-bst"><a href="#red-black-bst" class="headerlink" title="red-black bst"></a>red-black bst</h4><h5 id="Left-leaning-red-black-BSTs"><a href="#Left-leaning-red-black-BSTs" class="headerlink" title="Left-leaning red-black BSTs"></a>Left-leaning red-black BSTs</h5><ul>
+<li>No node has two red links connected to it.</li>
+<li>Every path from root to null link has the same number of black links.</li>
+<li>Red links lean left</li>
+</ul>
+<p>how to create?</p>
+<ol>
+<li>Represent 2–3 tree as a BST.</li>
+<li>Use “internal” left-leaning links as “glue” for 3–nodes</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 中间节点换目标节点，不符合bst的左右换一下</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> Node <span class="title">rotateLeft</span><span class="params">(Node h)</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">assert</span> <span class="title">isRed</span><span class="params">(h.right)</span></span>;</span><br><span class="line">     Node x = h.right;</span><br><span class="line">     h.right = x.left;</span><br><span class="line">     x.left = h;</span><br><span class="line">     x.color = h.color;</span><br><span class="line">     h.color = RED;</span><br><span class="line">     <span class="keyword">return</span> x;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">private</span> Node <span class="title">rotateRight</span><span class="params">(Node h)</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">assert</span> <span class="title">isRed</span><span class="params">(h.left)</span></span>;</span><br><span class="line">     Node x = h.left;</span><br><span class="line">     h.left = x.right;</span><br><span class="line">     x.right = h;</span><br><span class="line">     x.color = h.color;</span><br><span class="line">     h.color = RED;</span><br><span class="line">     <span class="keyword">return</span> x;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> flippColor</span><br></pre></td></tr></table></figure>
+
+<h5 id="B-trees"><a href="#B-trees" class="headerlink" title="B trees"></a>B trees</h5><h3 id="Geometric-Applications-of-BSTs"><a href="#Geometric-Applications-of-BSTs" class="headerlink" title="Geometric Applications of BSTs"></a>Geometric Applications of BSTs</h3><h4 id="1d-range-search-count"><a href="#1d-range-search-count" class="headerlink" title="1d range search/count"></a>1d range search/count</h4><p>how many numbers between k1 and k2</p>
+<h4 id="line-segments-intersection"><a href="#line-segments-intersection" class="headerlink" title="line segments intersection"></a>line segments intersection</h4><p>思路：</p>
+<img src="/Review-Outline-on-Interview/1.png" class="">
+
+<h4 id="2d-range-search"><a href="#2d-range-search" class="headerlink" title="2d range search"></a>2d range search</h4><img src="/Review-Outline-on-Interview/2.png" class="">
+
+<h4 id="interval-search-trees"><a href="#interval-search-trees" class="headerlink" title="interval search trees"></a>interval search trees</h4><img src="/Review-Outline-on-Interview/3.png" class="">
+<h4 id="rectangle-intersection"><a href="#rectangle-intersection" class="headerlink" title="rectangle intersection"></a>rectangle intersection</h4><img src="/Review-Outline-on-Interview/4.png" class="">
+
+<h4 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h4><img src="/Review-Outline-on-Interview/5.png" class="">
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/CAS-Happened-Before-Concurrent%E5%8C%85-%E5%85%B3%E4%BA%8Ejava%E4%B8%AD%E5%B9%B6%E5%8F%91%E7%9A%84%E4%B8%80%E5%88%87.html" rel="prev" title="锁, Happened-Before, volatile, atomic, locks 包--java同步">
+      <i class="fa fa-chevron-left"></i> 锁, Happened-Before, volatile, atomic, locks 包--java同步
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/SS%E9%82%A3%E4%BA%9B%E4%BA%8B.html" rel="next" title="SS那些事">
+      SS那些事 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Union-Find"><span class="nav-number">1.</span> <span class="nav-text">Union Find</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#applications"><span class="nav-number">1.1.</span> <span class="nav-text">applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stacks-and-Queues"><span class="nav-number">2.</span> <span class="nav-text">Stacks and Queues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Elementary-Sorting"><span class="nav-number">3.</span> <span class="nav-text">Elementary Sorting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#shuffle-sort"><span class="nav-number">3.1.</span> <span class="nav-text">shuffle sort</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#convex-hull"><span class="nav-number">3.2.</span> <span class="nav-text">convex hull</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#binary-search"><span class="nav-number">3.3.</span> <span class="nav-text">binary search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Merge-Sort"><span class="nav-number">4.</span> <span class="nav-text">Merge Sort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bottom-up-merge-sort"><span class="nav-number">4.1.</span> <span class="nav-text">bottom-up merge sort</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quick-Sort"><span class="nav-number">5.</span> <span class="nav-text">Quick Sort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#find-the-kth-largest"><span class="nav-number">5.1.</span> <span class="nav-text">find the kth largest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#duplicate-keys"><span class="nav-number">5.2.</span> <span class="nav-text">duplicate keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sorting-summary"><span class="nav-number">5.3.</span> <span class="nav-text">sorting summary</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Priority-Queues"><span class="nav-number">6.</span> <span class="nav-text">Priority Queues</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#applications-1"><span class="nav-number">6.1.</span> <span class="nav-text">applications</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#binary-heap"><span class="nav-number">6.2.</span> <span class="nav-text">binary heap</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#heap-sort"><span class="nav-number">6.3.</span> <span class="nav-text">heap sort</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Symbol-Tables"><span class="nav-number">7.</span> <span class="nav-text">Symbol Tables</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#binary-search-tree"><span class="nav-number">7.1.</span> <span class="nav-text">binary search tree</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#balanced-search-tree"><span class="nav-number">8.</span> <span class="nav-text">balanced search tree</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-tree"><span class="nav-number">8.1.</span> <span class="nav-text">2-3 tree</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#red-black-bst"><span class="nav-number">8.2.</span> <span class="nav-text">red-black bst</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Left-leaning-red-black-BSTs"><span class="nav-number">8.2.1.</span> <span class="nav-text">Left-leaning red-black BSTs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#B-trees"><span class="nav-number">8.2.2.</span> <span class="nav-text">B trees</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Geometric-Applications-of-BSTs"><span class="nav-number">9.</span> <span class="nav-text">Geometric Applications of BSTs</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1d-range-search-count"><span class="nav-number">9.1.</span> <span class="nav-text">1d range search&#x2F;count</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#line-segments-intersection"><span class="nav-number">9.2.</span> <span class="nav-text">line segments intersection</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2d-range-search"><span class="nav-number">9.3.</span> <span class="nav-text">2d range search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#interval-search-trees"><span class="nav-number">9.4.</span> <span class="nav-text">interval search trees</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rectangle-intersection"><span class="nav-number">9.5.</span> <span class="nav-text">rectangle intersection</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#summary"><span class="nav-number">9.6.</span> <span class="nav-text">summary</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">lawlietxxl</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lawlietxxl</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://lawlietxxl.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://blog.lawlietxxl.site/Review-Outline-on-Interview.html",
+            identifier: "Review-Outline-on-Interview.html",
+            title: "Review Outline on Interview"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://lawlietxxl.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
