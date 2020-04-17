@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://blog.lawlietxxl.site').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="各种语法糖，简化写代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python3代码模版">
+<meta property="og:url" content="https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html">
+<meta property="og:site_name" content="lawlietxxl&#39;s blog">
+<meta property="og:description" content="各种语法糖，简化写代码">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-16T02:56:46.000Z">
+<meta property="article:modified_time" content="2020-04-16T18:17:37.479Z">
+<meta property="article:author" content="lawlietxxl">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>python3代码模版 | lawlietxxl's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lawlietxxl's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lawlietxxl">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lawlietxxl's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          python3代码模版
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-04-15 19:56:46" itemprop="dateCreated datePublished" datetime="2020-04-15T19:56:46-07:00">2020-04-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-16 11:17:37" itemprop="dateModified" datetime="2020-04-16T11:17:37-07:00">2020-04-16</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="python3代码模版.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>各种语法糖，简化写代码</p>
+<a id="more"></a>
+
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> collections</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建类语法糖</span></span><br><span class="line">Card = collections.namedtuple(<span class="string">'Card'</span>, [<span class="string">'rank'</span>, <span class="string">'suit'</span>])</span><br><span class="line"><span class="comment"># filter in list</span></span><br><span class="line">[str(n) <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">11</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机选取</span></span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> choice</span><br><span class="line">choice(list)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒序访问</span></span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> reversed(list):</span><br><span class="line">    print(a)</span><br><span class="line"></span><br><span class="line"><span class="comment"># tuple比较的时候比较的是数值</span></span><br><span class="line">(<span class="string">'a'</span>, <span class="number">1</span>) == (<span class="string">'a'</span>, <span class="number">1</span>) <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 排序方法</span></span><br><span class="line">list0.sort() <span class="comment">#在原列表排序</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">comp</span><span class="params">(card)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> card.val</span><br><span class="line">list1 = sorted(list0, key=comp) <span class="comment">#生成一个新的list，并且按照key方法返回的数值排序 还有一个reversed参数控制倒序</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出字符串 -- old school</span></span><br><span class="line">name = <span class="string">"Eric"</span></span><br><span class="line">age = <span class="number">74</span></span><br><span class="line"><span class="string">"Hello, %s. You are %s."</span> % (name, age)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出字符串 -- f string</span></span><br><span class="line">name = <span class="string">"Eric"</span></span><br><span class="line">age = <span class="number">74</span></span><br><span class="line"><span class="string">f"Hello, <span class="subst">&#123;name&#125;</span>. You are <span class="subst">&#123;age&#125;</span>."</span></span><br><span class="line">message = (</span><br><span class="line">    <span class="string">f"Hi <span class="subst">&#123;name&#125;</span>. "</span></span><br><span class="line">    <span class="string">f"You are a <span class="subst">&#123;profession&#125;</span>. "</span></span><br><span class="line">    <span class="string">f"You were in <span class="subst">&#123;affiliation&#125;</span>."</span></span><br><span class="line">) <span class="comment"># 它会连起来</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># python3.7之后 dict 类型的key值是ordered，意思是插入的顺序是固定的。</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Sequences"><a href="#Sequences" class="headerlink" title="Sequences"></a>Sequences</h1><ul>
+<li><code>list, tuple, and collections.deque</code> can hold items of different types, including nested containers.</li>
+<li><code>str, bytes, bytearray, memoryview, and array.array</code>hold items of one simple type.</li>
+<li>不可变序列 <code>tuple, str, and bytes</code></li>
+</ul>
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 构建list</span></span><br><span class="line">symbols = <span class="string">'$¢£¥€¤'</span></span><br><span class="line">codes = [ord(symbol) <span class="keyword">for</span> symbol <span class="keyword">in</span> symbols]</span><br><span class="line">beyond_ascii = [ord(s) <span class="keyword">for</span> s <span class="keyword">in</span> symbols <span class="keyword">if</span> ord(s) &gt; <span class="number">127</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下面代码涉及了，filter(function, list) --&gt; filter object</span></span><br><span class="line"><span class="comment"># lambda arg_list: expression</span></span><br><span class="line"><span class="comment"># map(function, list)</span></span><br><span class="line">beyond_ascii = list(filter(<span class="keyword">lambda</span> c: c &gt; <span class="number">127</span>, map(ord, symbols))) <span class="comment"># filter/map</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 两个for循环建立数组</span></span><br><span class="line">colors = [<span class="string">'black'</span>, <span class="string">'white'</span>]</span><br><span class="line">sizes = [<span class="string">'S'</span>, <span class="string">'M'</span>, <span class="string">'L'</span>]</span><br><span class="line">tshirts = [(color, size) <span class="keyword">for</span> color <span class="keyword">in</span> colors <span class="keyword">for</span> size <span class="keyword">in</span> sizes]</span><br></pre></td></tr></table></figure>
+
+<p>常用方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">s.__add__(s2) <span class="comment">#s + s2—concatenation</span></span><br><span class="line">s.__iadd__(s2) <span class="comment">#s += s2—in-place concatenation</span></span><br><span class="line">s.append(e)</span><br><span class="line">s.copy() <span class="comment">#Shallow copy of the list</span></span><br><span class="line">s.count(e) <span class="comment"># Count occurrences of an element</span></span><br><span class="line">s.extend(it) <span class="comment"># Append items from iterable it</span></span><br><span class="line">s.index(e) <span class="comment"># Find position of first occurrence of e</span></span><br><span class="line">s.insert(p, e) <span class="comment"># Insert element e before the item at position p</span></span><br><span class="line">s.pop([p]) <span class="comment"># Remove and return item at position p (default: last)</span></span><br><span class="line">s.remove(e) <span class="comment"># Remove first occurrence of element e by value</span></span><br><span class="line">s.reverse() <span class="comment"># Reverse the order of the items in place</span></span><br><span class="line">s.__reversed__() <span class="comment"># 配合for使用的</span></span><br><span class="line">s.sort([key], [reverse]) <span class="comment"># Sort items in place with optional keyword arguments key and reverse</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="tuple"><a href="#tuple" class="headerlink" title="tuple"></a>tuple</h2><ul>
+<li>tuple list可以被排序，顺序按照第一个值来</li>
+<li>tuple list可以被for进行轮询</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> country, _ <span class="keyword">in</span> traveler_ids:</span><br><span class="line">    print(country)</span><br><span class="line"></span><br><span class="line">lax_coordinates = (<span class="number">33.9425</span>, <span class="number">-118.408056</span>)</span><br><span class="line">latitude, longitude = lax_coordinates  <span class="comment"># unpacking</span></span><br><span class="line">b, a = a, b <span class="comment"># unpacking</span></span><br><span class="line">*(<span class="number">1</span>, <span class="number">2</span>) <span class="comment"># unpacking *号</span></span><br><span class="line"></span><br><span class="line">a, b, *rest = range(<span class="number">5</span>)</span><br><span class="line">(<span class="number">0</span>, <span class="number">1</span>, [<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">a, *body, c, d = range(<span class="number">5</span>)</span><br><span class="line">(<span class="number">0</span>, [<span class="number">1</span>, <span class="number">2</span>], <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">hash(someTuple) <span class="comment">#不会抛出异常，但是如果里面有list就会抛出异常</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h2><p>stride seq[start:stop:step]</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'bicycle'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s[::<span class="number">3</span>]</span><br><span class="line"><span class="string">'bye'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s[::<span class="number">-1</span>]</span><br><span class="line"><span class="string">'elcycib'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s[::<span class="number">-2</span>]</span><br><span class="line"><span class="string">'eccb'</span></span><br></pre></td></tr></table></figure>
+
+<p>一波对slice的修改方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>l = list(range(<span class="number">10</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l[<span class="number">2</span>:<span class="number">5</span>] = [<span class="number">20</span>, <span class="number">30</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> l[<span class="number">5</span>:<span class="number">7</span>] <span class="comment"># del 操作</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l[<span class="number">3</span>::<span class="number">2</span>] = [<span class="number">11</span>, <span class="number">22</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">20</span>, <span class="number">11</span>, <span class="number">5</span>, <span class="number">22</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l[<span class="number">2</span>:<span class="number">5</span>] = <span class="number">100</span>  <span class="number">1</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: can only assign an iterable</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l[<span class="number">2</span>:<span class="number">5</span>] = [<span class="number">100</span>] <span class="comment"># 删除并且替换了部分</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">100</span>, <span class="number">22</span>, <span class="number">9</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>board = [[<span class="string">'_'</span>] * <span class="number">3</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>)]  <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>board</span><br><span class="line">[[<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'_'</span>], [<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'_'</span>], [<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'_'</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>board[<span class="number">1</span>][<span class="number">2</span>] = <span class="string">'X'</span>  <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>board</span><br><span class="line">[[<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'_'</span>], [<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'X'</span>], [<span class="string">'_'</span>, <span class="string">'_'</span>, <span class="string">'_'</span>]]</span><br></pre></td></tr></table></figure>
+
+<p>注意 * 和 + 如果作用到不可变类型，那么id(变量)是会变的</p>
+<h2 id="bisect"><a href="#bisect" class="headerlink" title="bisect"></a>bisect</h2><p>用于二分查找和插入<br>bisect.bisect , bisect.bisect_left 和 bisect.bisect_right (遇到相等的是插入左边还是右边)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bisect.bisect(a, x, lo=<span class="number">0</span>, hi=len(a))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bisect.insort(seq, item)</span><br></pre></td></tr></table></figure>
+
+<h2 id="array"><a href="#array" class="headerlink" title="array"></a>array</h2><p>更加节省内存，支持 insert pop extend 等操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">floats &#x3D; array(&#39;d&#39;, (random() for i in range(10**7)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq = deque(range(<span class="number">10</span>), maxlen=<span class="number">10</span>)  <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>], maxlen=<span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq.rotate(<span class="number">3</span>)  <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>], maxlen=<span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq.rotate(<span class="number">-4</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">0</span>], maxlen=<span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq.appendleft(<span class="number">-1</span>)  <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">-1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>], maxlen=<span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq.extend([<span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>])  <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>], maxlen=<span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq.extendleft([<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>])  <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dq</span><br><span class="line">deque([<span class="number">40</span>, <span class="number">30</span>, <span class="number">20</span>, <span class="number">10</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], maxlen=<span class="number">10</span>)</span><br><span class="line">dq.popLeft()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其他queue。SimpleQueue, Queue, LifoQueue, and PriorityQueue</li>
+<li>heapq  提供 heappush  heappop 两种方法。类似优先队列</li>
+</ul>
+<h1 id="dict-and-set"><a href="#dict-and-set" class="headerlink" title="dict and set"></a>dict and set</h1><p>键值需要是 hashable 的</p>
+<h2 id="dict"><a href="#dict" class="headerlink" title="dict"></a>dict</h2><p>初始化</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = dict(one=<span class="number">1</span>, two=<span class="number">2</span>, three=<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = &#123;<span class="string">'three'</span>: <span class="number">3</span>, <span class="string">'two'</span>: <span class="number">2</span>, <span class="string">'one'</span>: <span class="number">1</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = dict([(<span class="string">'two'</span>, <span class="number">2</span>), (<span class="string">'one'</span>, <span class="number">1</span>), (<span class="string">'three'</span>, <span class="number">3</span>)])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = dict(zip([<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>e = dict(&#123;<span class="string">'three'</span>: <span class="number">3</span>, <span class="string">'one'</span>: <span class="number">1</span>, <span class="string">'two'</span>: <span class="number">2</span>&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b == c == d == e</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;code: country.upper()                                          <span class="number">3</span></span><br><span class="line"><span class="meta">... </span>    <span class="keyword">for</span> country, code <span class="keyword">in</span> sorted(country_dial.items())</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">if</span> code &lt; <span class="number">70</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">list(m.keys())</span><br><span class="line">m.popitem()</span><br><span class="line">d.fromkeys(it, [initial]) <span class="comment"># New mapping from keys in iterable, with optional initial value (defaults to None)</span></span><br><span class="line">d.get(k, [default]) <span class="comment"># Get item with key k, return default or None if missing</span></span><br><span class="line">d.keys() </span><br><span class="line">d.values()</span><br><span class="line">d.items()</span><br><span class="line">d.pop(k, [default])</span><br><span class="line">d.setdefault(k, [default]) <span class="comment"># If k in d, return d[k]; else set d[k] = default and return it</span></span><br></pre></td></tr></table></figure>
+<p>其中 setdefault 和 get 很好用<br>除了 dict 还有 defaultdict 和 OrderedDict</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">index = collections.defaultdict(list)</span><br><span class="line">index[word].append(location) <span class="comment"># 返回默认的list</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="set"><a href="#set" class="headerlink" title="set"></a>set</h2><p>初始化</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;</span><br><span class="line">a = set([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">&#123;chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">32</span>, <span class="number">256</span>) <span class="keyword">if</span> <span class="string">'SIGN'</span> <span class="keyword">in</span> name(chr(i),<span class="string">''</span>)&#125; <span class="comment"># setcomps</span></span><br></pre></td></tr></table></figure>
+
+<p>交集 &amp;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">found = len(needles &amp; haystack) <span class="comment"># set的交集</span></span><br><span class="line">found = len(set(needles).intersection(haystack))</span><br></pre></td></tr></table></figure>
+
+<p>并集 |</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a | b</span><br></pre></td></tr></table></figure>
+
+<p>差 -</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s - z <span class="comment"># Relative complement or difference between s and z</span></span><br></pre></td></tr></table></figure>
+
+<p>异或 ^</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s ^ z <span class="comment"># (s | z) - (s &amp; z)</span></span><br></pre></td></tr></table></figure>
+
+<p>包含</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">e <span class="keyword">in</span> s</span><br><span class="line">s &lt;= z</span><br><span class="line">s &lt; z</span><br></pre></td></tr></table></figure>
+
+<p>基本方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s.discard(e) <span class="comment"># Remove element e from s if it is present</span></span><br><span class="line">s.remove(e) <span class="comment"># Remove element e from s, raising KeyError if e not in s</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="字符串-略"><a href="#字符串-略" class="headerlink" title="字符串 略"></a>字符串 略</h1><p>python中没有string buffer，如果效率高的话，使用以下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">''</span>.join([<span class="string">'abc'</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(loop_count)])</span><br></pre></td></tr></table></figure>
+
+<h1 id="object-references-mutalbility-and-recycling"><a href="#object-references-mutalbility-and-recycling" class="headerlink" title="object references, mutalbility and recycling"></a>object references, mutalbility and recycling</h1><p>copy</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line">bus1 = Bus([<span class="string">'Alice'</span>, <span class="string">'Bill'</span>, <span class="string">'Claire'</span>, <span class="string">'David'</span>])</span><br><span class="line">bus2 = copy.copy(bus1)</span><br><span class="line">bus3 = copy.deepcopy(bus1)</span><br></pre></td></tr></table></figure>
+
+<h1 id="python-tips"><a href="#python-tips" class="headerlink" title="python tips"></a>python tips</h1><h2 id="pythonic-thinking"><a href="#pythonic-thinking" class="headerlink" title="pythonic thinking"></a>pythonic thinking</h2><ul>
+<li>变量、函数名、属性命名方式为 lowercase_underscore</li>
+<li>tuple进行unpacking使用命名的方式，而不是indexing</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">item = (<span class="string">'Peanut butter'</span>, <span class="string">'Jelly'</span>)</span><br><span class="line">first, second = item <span class="comment"># Unpacking</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>循环的时候，使用 enumerate 代替 range</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i, flavor <span class="keyword">in</span> enumerate(flavor_list):</span><br><span class="line">    print(<span class="string">f'<span class="subst">&#123;i + <span class="number">1</span>&#125;</span>: <span class="subst">&#123;flavor&#125;</span>'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>并行计算的时候可以使用zip函数，可以把两个iterator连接起来</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> name, count <span class="keyword">in</span> zip(names, counts):</span><br><span class="line">    <span class="keyword">if</span> count &gt; max_count:</span><br><span class="line">        longest_name = name</span><br><span class="line">        max_count = count</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果不一样长</span></span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">for</span> name, count <span class="keyword">in</span> itertools.zip_longest(names, counts):</span><br><span class="line">    print(<span class="string">f'<span class="subst">&#123;name&#125;</span>: <span class="subst">&#123;count&#125;</span>'</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用 := 进行赋值并返回</li>
+</ul>
+<p>普通用法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (count := fresh_fruit.get(<span class="string">'apple'</span>, <span class="number">0</span>)) &gt;= <span class="number">4</span>:</span><br><span class="line">    make_cider(count)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    out_of_stock()</span><br></pre></td></tr></table></figure>
+
+<p>代替 do-while</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> fresh_fruit := pick_fruit():</span><br><span class="line">    <span class="keyword">for</span> fruit, count <span class="keyword">in</span> fresh_fruit.items():</span><br><span class="line">        batch = make_juice(fruit, count)</span><br><span class="line">        bottles.extend(batch)</span><br></pre></td></tr></table></figure>
+
+<h2 id="lists-and-dicts"><a href="#lists-and-dicts" class="headerlink" title="lists and dicts"></a>lists and dicts</h2><ul>
+<li><p>slice会忽略 out of bounds</p>
+</li>
+<li><p>给slice赋值一个list，原来slice的位置会被替代</p>
+</li>
+<li><p>stride 正负决定了slice起点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>, <span class="string">'f'</span>, <span class="string">'g'</span>, <span class="string">'h'</span>]</span><br><span class="line">x[::<span class="number">2</span>]   <span class="comment"># ['a', 'c', 'e', 'g']</span></span><br><span class="line">x[::<span class="number">-2</span>]  <span class="comment"># ['h', 'f', 'd', 'b']</span></span><br></pre></td></tr></table></figure></li>
+<li><p>排序 使用key </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">places.sort(key=<span class="keyword">lambda</span> x: x.lower())</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用get 而并非 in进行默认值选取</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.get(key, <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用defaultdict 代替 setDefault</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Visits</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">       self.data = defaultdict(set)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(self, country, city)</span>:</span></span><br><span class="line">       self.data[country].add(city)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="functions"><a href="#functions" class="headerlink" title="functions"></a>functions</h2><ul>
+<li><p>不要返回超过3个变量</p>
+</li>
+<li><p>使用可变长参数代替list</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">log</span><span class="params">(message, *values)</span>:</span> <span class="comment"># The only difference</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意使用keyword argument的方法</p>
+</li>
+</ul>
+<p>keyword argument方法要在positional方法后面</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">my_kwargs = &#123;</span><br><span class="line">    <span class="string">'number'</span>: <span class="number">20</span>,</span><br><span class="line">    <span class="string">'divisor'</span>: <span class="number">7</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">assert</span> remainder(**my_kwargs) == <span class="number">6</span></span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E6%95%B4%E7%90%86.html" rel="prev" title="算法导论整理">
+      <i class="fa fa-chevron-left"></i> 算法导论整理
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基础"><span class="nav-number">1.</span> <span class="nav-text">基础</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sequences"><span class="nav-number">2.</span> <span class="nav-text">Sequences</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#list"><span class="nav-number">2.1.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tuple"><span class="nav-number">2.2.</span> <span class="nav-text">tuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#slice"><span class="nav-number">2.3.</span> <span class="nav-text">slice</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多维数组"><span class="nav-number">2.4.</span> <span class="nav-text">多维数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bisect"><span class="nav-number">2.5.</span> <span class="nav-text">bisect</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#array"><span class="nav-number">2.6.</span> <span class="nav-text">array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deque"><span class="nav-number">2.7.</span> <span class="nav-text">deque</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#dict-and-set"><span class="nav-number">3.</span> <span class="nav-text">dict and set</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dict"><span class="nav-number">3.1.</span> <span class="nav-text">dict</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#set"><span class="nav-number">3.2.</span> <span class="nav-text">set</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串-略"><span class="nav-number">4.</span> <span class="nav-text">字符串 略</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#object-references-mutalbility-and-recycling"><span class="nav-number">5.</span> <span class="nav-text">object references, mutalbility and recycling</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#python-tips"><span class="nav-number">6.</span> <span class="nav-text">python tips</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pythonic-thinking"><span class="nav-number">6.1.</span> <span class="nav-text">pythonic thinking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lists-and-dicts"><span class="nav-number">6.2.</span> <span class="nav-text">lists and dicts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#functions"><span class="nav-number">6.3.</span> <span class="nav-text">functions</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">lawlietxxl</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lawlietxxl</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://lawlietxxl.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html",
+            identifier: "python3代码模版.html",
+            title: "python3代码模版"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://lawlietxxl.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
