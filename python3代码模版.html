@@ -13,38 +13,12 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://blog.lawlietxxl.site').hostname,
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.lawlietxxl.site","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
   <meta name="description" content="各种语法糖，简化写代码">
 <meta property="og:type" content="article">
@@ -54,7 +28,7 @@
 <meta property="og:description" content="各种语法糖，简化写代码">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-16T02:56:46.000Z">
-<meta property="article:modified_time" content="2020-04-27T17:46:57.506Z">
+<meta property="article:modified_time" content="2020-04-30T05:31:34.073Z">
 <meta property="article:author" content="lawlietxxl">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -66,8 +40,9 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
   };
 </script>
 
@@ -110,17 +85,6 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">lawlietxxl's blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-  </div>
-
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
       <span class="toggle-line toggle-line-first"></span>
@@ -128,25 +92,43 @@
       <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">lawlietxxl's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
 
+
+
 <nav class="site-nav">
-  
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
 
   </li>
   </ul>
-
 </nav>
+
+
+
+
 </div>
     </header>
 
@@ -162,14 +144,13 @@
         <div class="content-wrap">
           
 
-          <div class="content">
+          <div class="content post posts-expand">
             
 
-  <div class="posts-expand">
-      
+    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -189,7 +170,7 @@
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
@@ -197,10 +178,10 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-27 10:46:57" itemprop="dateModified" datetime="2020-04-27T10:46:57-07:00">2020-04-27</time>
+                <time title="Modified: 2020-04-29 22:31:34" itemprop="dateModified" datetime="2020-04-29T22:31:34-07:00">2020-04-29</time>
               </span>
 
           
@@ -208,11 +189,11 @@
   <span class="post-meta-item">
     
       <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
+        <i class="far fa-comment"></i>
       </span>
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html#comments" itemprop="discussionUrl">
+    <a title="disqus" href="/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html#disqus_thread" itemprop="discussionUrl">
       <span class="post-comments-count disqus-comment-count" data-disqus-identifier="python3代码模版.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -256,6 +237,15 @@
 <p>deque是 队列 和 栈 的实现。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">d = deque([iterable[, maxlen])</span><br><span class="line">d.append(x)</span><br><span class="line">d.pop()</span><br><span class="line"></span><br><span class="line">d.appendleft(x)</span><br><span class="line">d.popleft()</span><br><span class="line"></span><br><span class="line">d.clear()</span><br><span class="line">d.copy()</span><br><span class="line"></span><br><span class="line">d.extend()</span><br><span class="line">d.extendleft()</span><br><span class="line"></span><br><span class="line">d.insert(i, x)</span><br><span class="line"></span><br><span class="line">d.reverse()</span><br><span class="line">d.rotate(n=<span class="number">1</span>) <span class="comment"># n &gt; 0, then d.appendleft(d.pop()); n &lt; 0, then d.append(d.popleft())</span></span><br></pre></td></tr></table></figure>
 
+<ul>
+<li><p>lru_cache</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> lru_cache</span><br><span class="line"><span class="meta">@lru_cache</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count_vowels</span><span class="params">(sentence)</span>:</span></span><br><span class="line">    sentence = sentence.casefold()</span><br><span class="line">    <span class="keyword">return</span> sum(sentence.count(vowel) <span class="keyword">for</span> vowel <span class="keyword">in</span> <span class="string">'aeiou'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用str方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">str.endswith(suffix[, start[, end]])</span><br><span class="line">str.index(sub[, start[, end]])</span><br><span class="line">str.rindex(sub[, start[, end]])</span><br><span class="line">str.isalnum()</span><br><span class="line">str.isalpha()</span><br><span class="line">str.isdecimal() <span class="comment"># 包含unicode格式</span></span><br><span class="line">str.isdigit()</span><br><span class="line">str.islower()</span><br><span class="line">str.isupper()</span><br><span class="line">str.join(iterable)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
 <h1 id="Sequences"><a href="#Sequences" class="headerlink" title="Sequences"></a>Sequences</h1><ul>
 <li><code>list, tuple, and collections.deque</code> can hold items of different types, including nested containers.</li>
 <li><code>str, bytes, bytearray, memoryview, and array.array</code>hold items of one simple type.</li>
@@ -413,7 +403,6 @@
   
   
 
-  </div>
 
 
           </div>
@@ -428,7 +417,7 @@
 
 <script>
   window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
+    let { activeClass } = CONFIG.comments;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
@@ -518,19 +507,18 @@
       <div class="footer-inner">
         
 
+        
+
 <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">lawlietxxl</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
         
@@ -597,16 +585,16 @@
   window.addEventListener('load', loadCount, false);
 </script>
 <script>
+  var disqus_config = function() {
+    this.page.url = "https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html";
+    this.page.identifier = "python3代码模版.html";
+    this.page.title = "python3代码模版";
+    };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
       DISQUS.reset({
         reload: true,
-        config: {page: {
-            url: "https://blog.lawlietxxl.site/python3%E4%BB%A3%E7%A0%81%E6%A8%A1%E7%89%88.html",
-            identifier: "python3代码模版.html",
-            title: "python3代码模版"
-          }
-        }
+        config: disqus_config
       });
     } else {
       var d = document, s = d.createElement('script');
